@@ -1,3 +1,20 @@
-<p>{{ejercicio.name}}</p>
 
-<p><span>id: </span>{{ejercicio.id}}</p>
+<ul class="ejercicio">
+    <li *ngFor="let ejercicios of ejercicioscollecion">
+    <span class="ejercicio">{{ejercicios.id}}</span><span>{{ejercicios.name}}</span> 
+    </li>
+</ul>
+
+
+<!--<p><span>id: </span>{{ejercicio.id}}</p>
+<p>{{ejercicio.name | uppercase}}</p>
+<div>
+    <label>
+nombre :
+<input [(ngModel)]="ejercicio.name" placeholder="name">
+</label>
+<label>
+    nombre salida: {{ejercicio.name}}
+    </label>
+    
+</div> -->

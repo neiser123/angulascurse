@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {Ejercicioob} from '../ejercicioob';
+import {EJERCICIOS} from '../collection-ejersicios';
 @Component({
   selector: 'app-ejercicios',
   templateUrl: './ejercicios.component.html',
@@ -8,11 +9,13 @@ import {Ejercicioob} from '../ejercicioob';
 export class EjerciciosComponent implements OnInit {
 ejercio = 'flexiones ';
 //creqcion de objetos
-ejercicio:Ejercicioob ={
+/*ejercicio:Ejercicioob ={
 
   id:1,
   name:"flexiones"
-};
+};*/
+ejercicioscollecion=EJERCICIOS;
+
   constructor() { }
 
   ngOnInit(): void {
