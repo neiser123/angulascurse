@@ -10,3 +10,4 @@ export const EJERCICIOS : Ejercicioob[]=[
 {id:7,name:'triceps'}
     
 ];
+

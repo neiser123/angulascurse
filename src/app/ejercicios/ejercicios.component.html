@@ -1,20 +1,20 @@
 
 <ul class="ejercicio">
-    <li *ngFor="let ejercicios of ejercicioscollecion">
+    <li *ngFor="let ejercicios of ejercicioscollecion" (click)="onSelectEjercicio(ejercicios)" [class.selected]="ejercicios===ejercicioselecionado">
     <span class="ejercicio">{{ejercicios.id}}</span><span>{{ejercicios.name}}</span> 
     </li>
 </ul>
-
-
+<!-- pasamos la propiedad ejercicioselecionado al componente ejercicio-detalle por medio de la variable ejercicioselecionado-->
+<app-ejercicio-detalle [ejercicioselecionado1]="ejercicioselecionado"></app-ejercicio-detalle>
 <!--<p><span>id: </span>{{ejercicio.id}}</p>
-<p>{{ejercicio.name | uppercase}}</p>
-<div>
-    <label>
-nombre :
-<input [(ngModel)]="ejercicio.name" placeholder="name">
-</label>
-<label>
-    nombre salida: {{ejercicio.name}}
+    <p>{{ejercicio.name | uppercase}}</p>
+    <div>
+        <label>
+    nombre :
+    <input [(ngModel)]="ejercicio.name" placeholder="name">
     </label>
-    
-</div> -->
+    <label>
+        nombre salida: {{ejercicio.name}}
+        </label>
+        
+    </div> -->

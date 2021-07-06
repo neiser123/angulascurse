@@ -14,11 +14,18 @@ ejercio = 'flexiones ';
   id:1,
   name:"flexiones"
 };*/
+ 
 ejercicioscollecion=EJERCICIOS;
+ejercicioselecionado:Ejercicioob;
 
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  onSelectEjercicio(ejercicios:Ejercicioob):void{
+    this.ejercicioselecionado= ejercicios;
+    console.log("entro al onselect"+this.ejercicioselecionado.id);
   }
 
 }
